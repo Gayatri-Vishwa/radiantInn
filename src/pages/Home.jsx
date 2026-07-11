@@ -1,14 +1,14 @@
 
 import Hero from '../components/Hero'
-import Service from  '../components/Services'
+import Offerings from  '../components/Offerings'
 import Gallery from '../components/Gallery'
 import ContactSection from '../components/ContactSection'
 import About from '../components/About'
 import Menu from '../pages/Menu'
 
-import SignatureDishes from '../components/SignatureDishes'
+import Rooms from '../components/Rooms'
 import MenuPreview from '../components/MenuPreview'
-import ChefSection from '../components/ChefSection'
+import Amenities from '../components/Amenities'
 import Testimonials from '../components/Textimonials'
 import Footer from '../components/Footer'
 
@@ -23,13 +23,13 @@ function Home() {
 
 <About />
 
-<Service />
+<Offerings />
 
-<SignatureDishes />
+<Rooms />
 
 <MenuPreview />
 
-<ChefSection />
+<Amenities />
 
 <Gallery />
 

@@ -8,8 +8,8 @@ import { HashLink } from "react-router-hash-link";
 const navItems = [
   { id: "Home", path: "/#home" },
   { id: "About", path: "/#about" },
-  { id: "Services", path: "/#services" },
-  { id: "Menu", path: "/#menu" },
+  { id: "Offerings", path: "/#Offerings" },
+  { id: "Restaurent", path: "/#menu" },
   { id: "Gallery", path: "/#gallery" },
   { id: "Contact", path: "/#contact" },
 ];
@@ -25,12 +25,12 @@ function Navbar() {
         <div className="h-24 flex items-center justify-between">
           {/* Logo */}
           <div>
-            <h1 className="text-4xl font-bold tracking-[6px] text-amber-300">
-              PALASA
+            <h1 className=" text-2xl md:text-4xl font-bold tracking-[6px] upperCase text-amber-300">
+             RADIENT INN
             </h1>
 
-            <p className="text-xs uppercase tracking-[8px] md:tracking-[8px] text-stone-200">
-              Restaurant & Banquet
+            <p className="  text-[10px] md:text-xs uppercase tracking-[8px] md:tracking-[8px] text-stone-200">
+             Hotel & Venues
             </p>
           </div>
 
@@ -40,21 +40,10 @@ function Navbar() {
               // <a key={item.path} href={item.path} className={navLinkStyle}>
               //   {item.id}
               // </a>
-              <HashLink smooth to={item.path} className={navLinkStyle}>
+              <HashLink key={item.path} smooth to={item.path} className={navLinkStyle}>
                 {item.id}
               </HashLink>
-              //      <Link
-              //   to={item.path}
-              //    smooth="easeInOutQuart"
-              //   duration={500}
-              //   offset={-96}
-              //   spy={true}
-              //   onClick={() => setMenuOpen(false)}
-              //   activeClass="text-amber-300"
-              //   className="uppercase tracking-[2px] text-sm text-stone-200 hover:text-amber-300 transition duration-300 cursor-pointer"
-              // >
-              //   {item.id}
-              // </Link>
+           
             ))}
           </div>
 
@@ -84,6 +73,7 @@ function Navbar() {
               //   {item.id}
               // </a>
               <HashLink
+              key={item.id}
                 smooth
                 to={item.path}
                 className={navLinkStyle}

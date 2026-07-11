@@ -1,41 +1,41 @@
 import React from "react";
 
-import i3 from "../assets/signatureDishes/i4.png";
-import i4 from "../assets/signatureDishes/i5.png";
-import i5 from "../assets/signatureDishes/i6.png";
-import i6 from "../assets/signatureDishes/i7.png";
+import m1 from "../assets/menuPreview/m1.jpg";
+import m2 from "../assets/menuPreview/biryani.jpg";
+import m5 from "../assets/menuPreview/m5.jpg";
+import m4 from "../assets/menuPreview/m4.jpg";
+import m3 from "../assets/menuPreview/m3.jpg";
 import { useNavigate } from "react-router";
 
 function MenuPreview() {
     const navigate=useNavigate()
 
   const menuItems = [
-    {
-      image: i3,
-      name: "Paneer Tikka",
-      category: "Starters",
-      price: "₹299"
-    },
-    {
-      image: i4,
-      name: "Royal Biryani",
-      category: "Main Course",
-      price: "₹499"
-    },
-    {
-      image: i5,
-      name: "Chocolate Dessert",
-      category: "Desserts",
-      price: "₹249"
-    },
-    {
-      image: i6,
-      name: "Signature Mocktail",
-      category: "Drinks",
-      price: "₹199"
-    }
-  ];
-
+  {
+    image: m1,
+    name: "Paneer Butter Masala",
+    category: "Paneer Khazana",
+    price: "₹390",
+  },
+  {
+    image: m2,
+    name: " Biryani",
+    category: "Basmati Khazana",
+    price: "₹450",
+  },
+  {
+    image: m5,
+    name: "Tandoori Roti",
+    category: "Breads",
+    price: "₹30",
+  },
+  {
+    image: m3,
+    name: "Sizzling Brownie",
+    category: "Ice Cream",
+    price: "₹250",
+  },
+];
 
   return (
     <section
@@ -71,7 +71,7 @@ function MenuPreview() {
           ">
             Explore Our 
             <span className="text-amber-300">
-              {" "}Delicious Menu
+              {" "}Restaurent Menu
             </span>
           </h2>
 

@@ -1,5 +1,6 @@
 import React from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaMapMarkerAlt, FaClock } from "react-icons/fa";
+
 import { IoCall } from "react-icons/io5";
 
 function ContactSection() {
@@ -44,7 +45,7 @@ function ContactSection() {
           "
           >
             Visit
-            <span className="text-amber-300 uppercase"> Palasa</span>
+            <span className="text-amber-300 uppercase"> RADIENT INN</span>
           </h2>
 
           <p
@@ -65,9 +66,11 @@ function ContactSection() {
                 className="
               text-amber-300
               font-semibold
+              flex items-center
+              gap-2
               "
               >
-                📍 Location
+                <FaMapMarkerAlt /> Location
               </h3>
 
               <p className="text-stone-300">
@@ -80,9 +83,11 @@ function ContactSection() {
                 className="
               text-amber-300
               font-semibold
+               flex items-center
+              gap-2
               "
               >
-                🕒 Opening Hours
+                <FaClock /> Opening Hours
               </h3>
 
               <p className="text-stone-300">Mon - Sun : 11:00 AM - 11:00 PM</p>
@@ -93,9 +98,13 @@ function ContactSection() {
                 className="
               text-amber-300
               font-semibold
+              flex
+              items-center
+              gap-2
+             
               "
               >
-                📞 Phone
+                <IoCall /> Phone
               </h3>
 
               <p className="text-stone-300">+91 7599932543</p>
@@ -103,11 +112,10 @@ function ContactSection() {
           </div>
 
           {/* Call Button */}
-       <div className="flex flex-wrap gap-4 mt-8">
-
-  <a
-    href="tel:+917599932543"
-    className="
+          <div className="flex flex-wrap gap-4 mt-8">
+            <a
+              href="tel:+917599932543"
+              className="
     flex
     items-center
     gap-2
@@ -120,16 +128,16 @@ function ContactSection() {
     hover:bg-amber-400
     transition
     "
-  >
-    <IoCall />
-    Call Now
-  </a>
+            >
+              <IoCall />
+              Call Now
+            </a>
 
-  <a
-    href="https://wa.me/917599932543?text=Hello%20Palasa,%20I%20would%20like%20to%20know%20more%20about%20your%20restaurant."
-    target="_blank"
-    rel="noopener noreferrer"
-    className="
+            <a
+              href="https://wa.me/917599932543?text=Hello%20Palasa,%20I%20would%20like%20to%20know%20more%20about%20your%20restaurant."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
     flex
     items-center
     gap-2
@@ -142,18 +150,16 @@ function ContactSection() {
     hover:bg-green-700
     transition
     "
-  >
-    <FaWhatsapp />
-    WhatsApp
-  </a>
-
-</div>
+            >
+              <FaWhatsapp />
+              WhatsApp
+            </a>
+          </div>
         </div>
 
         {/* Image / Map Placeholder */}
         <div
-          className="
-  h-[400px]
+          className=" h-[400px]
   rounded-2xl
   overflow-hidden
   shadow-xl
@@ -169,6 +175,7 @@ function ContactSection() {
             referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
+        
       </div>
     </section>
   );

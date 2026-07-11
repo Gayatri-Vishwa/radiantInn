@@ -7,8 +7,8 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 
-import g1 from "../assets/gallery/g1.jpg";
-import g2 from "../assets/gallery/g2.jpg";
+import g1 from "../assets/gallery/g1.avif";
+import g2 from "../assets/gallery/g2.webp";
 import g3 from "../assets/gallery/g3.jpg";
 import g4 from "../assets/gallery/g4.jpg";
 import g5 from "../assets/gallery/g5.jpg";
@@ -63,9 +63,9 @@ const navigate=useNavigate()
           font-bold
           mt-4
           ">
-            Moments From
-            <span className="text-amber-300">
-              {" "}Palasa
+           Explore
+            <span className="text-amber-300 uppercase">
+              {" "} Radient Inn
             </span>
           </h2>
 
@@ -76,7 +76,7 @@ const navigate=useNavigate()
           max-w-2xl
           mx-auto
           ">
-            Explore our food, ambience and unforgettable dining moments.
+           Discover our elegant rooms, beautiful event spaces, fine dining, and memorable moments that make every stay truly special.
           </p>
 
 

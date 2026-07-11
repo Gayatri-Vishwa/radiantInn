@@ -1,6 +1,6 @@
 import React from "react";
-import { FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa";
-
+import { FaInstagram, FaFacebook, FaYoutube,  FaMapMarkerAlt,FaClock, } from "react-icons/fa";
+import { IoCall } from "react-icons/io5";
 
 function Footer() {
 
@@ -31,7 +31,7 @@ function Footer() {
           font-bold
           text-amber-300
           ">
-            Palasa
+            RADIENT INN
           </h2>
 
 
@@ -79,37 +79,38 @@ function Footer() {
 
 
         {/* Contact */}
-        <div>
+  
 
-          <h3 className="
+   <div>
+      <h3 className="
           text-xl
+          text-white
           font-semibold
           ">
             Contact
           </h3>
+    
+    <div className="mt-4 space-y-4 text-stone-400">
+   
 
+  <p className="flex items-center gap-3">
+    <FaMapMarkerAlt className="text-amber-300 text-lg" />
+    RADIENT INN Hotel & Venue
+  </p>
 
-          <div className="
-          mt-4
-          space-y-3
-          text-stone-400
-          ">
+  <p className="flex items-center gap-3">
+    <IoCall className="text-amber-300 text-lg" />
+    +91 XXXXX XXXXX
+  </p>
 
-            <p>
-              📍 Palasa Hotel & Resort
-            </p>
+  <p className="flex items-center gap-3">
+    <FaClock className="text-amber-300 text-lg" />
+    11:00 AM – 11:00 PM
+  </p>
 
-            <p>
-              📞 +91 XXXXX XXXXX
-            </p>
-
-            <p>
-              🕒 11:00 AM - 11:00 PM
-            </p>
-
-          </div>
-
-        </div>
+</div>
+    
+    </div>    
 
 
 
@@ -156,7 +157,7 @@ function Footer() {
       text-stone-500
       ">
 
-        © {new Date().getFullYear()} Palasa. All Rights Reserved.
+        © {new Date().getFullYear()}   RADIENT INN. All Rights Reserved.
 
       </div>
 

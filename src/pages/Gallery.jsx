@@ -1,7 +1,7 @@
 import React from "react";
 
-import g1 from "../assets/gallery/g1.jpg";
-import g2 from "../assets/gallery/g2.jpg";
+import g1 from "../assets/gallery/g1.avif";
+import g2 from "../assets/gallery/g2.webp";
 import g3 from "../assets/gallery/g3.jpg";
 import g4 from "../assets/gallery/g4.jpg";
 import g5 from "../assets/gallery/g5.jpg";
