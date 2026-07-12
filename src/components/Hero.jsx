@@ -1,6 +1,6 @@
 import React from "react";
 import heroImage from "../assets/hero.webp";
-import heroVideo from "../assets/images/herovideo.mp4";
+import heroVideo from "../assets/images/heroVideo.mp4";
 import { FaWhatsapp } from "react-icons/fa";
 
 function Hero() {
